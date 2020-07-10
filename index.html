@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Grinnell.io</title>
+        <link rel="icon" href="https://vignette.wikia.nocookie.net/boi-os-lore/images/3/3b/1200px-LetterG.svg.png/revision/latest?cb=20190316200752">
+
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="googlebot" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+        <script type="text/javascript" src="./jquery-1.11.0.js"></script>
+        <link rel="stylesheet" type="text/css" href="./result-light.css">
+        <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+        <script type="text/javascript" src="./bootstrap.min.js"></script>
+        <style id="compiled-css" type="text/css">
+
+            body {
+                line-height: 1.5;
+                font-family: 'Jost', sans-serif;
+            }
+
+            p, .font-size {
+                font-size: 16px;
+            }
+
+            .comment {
+                padding-bottom: 20px;
+                font-size: 12px;
+                /* font-style: italic; */
+            }
+
+            .frame {
+                padding: 35px 0 35px 0;
+            }
+
+            blockquote {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .tabs-left {
+            border-bottom: none;
+            padding-top: 2px;
+            }
+            .tabs-left {
+            border-right: 1px solid #ddd;
+            }
+
+            .tabs-left>li {
+            float: none;
+            margin-bottom: 2px;
+            }
+            .tabs-left>li {
+            margin-right: -1px;
+            }
+
+            .tabs-left>li.active>a,
+            .tabs-left>li.active>a:hover,
+            .tabs-left>li.active>a:focus {
+            border-bottom-color: #ddd;
+            border-right-color: transparent;
+            color: #CC0000;
+
+            
+            }
+            
+            img {
+            width: 100%;
+            height: 100%;
+            padding: 10px 0 15px 0;
+            }
+
+            .tabs-left>li>a {
+            border-radius: 4px 0 0 4px;
+            margin-right: 0;
+            display:block;
+            }
+
+            li a {
+            color: #272b2e;
+            font-weight: lighter;
+            }
+
+            /* EOS */
+        </style>
+        <script id="insert"></script>
+</head>
+<body>
+    <!-- <div class="col-sm-6"> -->
+    <div class="col-md-8 col-md-offset-1">
+        <h2>Jon Grinnell</h2>
+        <hr>
+        <div class="col-xs-3">
+            <!-- required for floating -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left sideways" id="myTab">
+                <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">June 14, 2020</a></li>
+                <li class=""><a href="#bootcamp" data-toggle="tab" aria-expanded="false">Dec 20, 2019</a></li>
+                <li class=""><a href="#ethereum" data-toggle="tab" aria-expanded="false">Oct 25, 2018</a></li>
+                <li class=""><a href="#other-2" data-toggle="tab" aria-expanded="false">Dec 1, 2015</a></li>
+                <li class=""><a href="#about" data-toggle="tab" aria-expanded="false">About</a></li>
+            </ul>
+        </div>
+
+        <div class="col-xs-9 ">
+            <!-- Tab panes -->
+            <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <h2>A blueprint: designing an LMS people want to use</h2>
+                <div class="comment"><i class="lni lni-timer"></i> 3 minute read</div>
+
+                <!-- <img src="https://images.unsplash.com/photo-1476725994324-6f6833ea0631?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"> -->
+                <img src="https://images.unsplash.com/photo-1501290301209-7a0323622985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80">
+            <div>
+                <p>As an online learning product manager, I’m intrigued by a common challenge many companies face with their learning management systems (LMS): they’re dull, clunky, and “no one has time”. Even as sleek learning experience platforms (LXP) came online as a solution to the LMS problem, it still seems as though many of the same problems persist that make learning system adoption difficult to achieve. So how do we bridge the gap? How might we design a system that people want to use? I’ll attempt to answer these questions, drawing on past experiences implementing learning platforms. Note: I’ll use the terms <em>customers</em> and <em>employees</em> interchangeably throughout.  
+                </p>
+                    <ul class= "font-size">
+                    <li><strong> Know the voice of the customer.</strong> With a strong grasp on your organization, its talent model, and its culture, define a list of questions and conduct an LMS needs analysis. Ask employees what they’re looking for in an LMS and take detailed notes. Once you hear themes, translate the employee needs into product feature sets, no more than 10, and focus on the needs that could most likely increase adoption (e.g. simple UI/UX, short videos, etc.). Lastly, take a page out of marketing’s book, and segment your LMS users into personas who have common attributes, and embed these to your system role architecture. The end result: you know who your customers are (personas) and their needs (feature sets) which is, effectively, the voice of the customer. 
+                    </li><br>
+                    <li>
+                    <strong>Articulate an LMS strategy.</strong> With the voice of the customer in mind, define your LMS vision, where it plays, how it wins, and key action priorities. To do this, define your LMS elevator pitch, identify your priority customers (e.g. engineering, sales, etc.), hypothesize how to “win” their engagement (e.g. feature "X", content "Y"), and create a sustainable plan to get it all done. Workplan your tasks and create key performance indicators, or KPIs (e.g., 30% NPS on the site by year 1, 70% curriculum completion by year 2, etc.). Consider programs you could implement that create space/time for learning (see Udemy’s DEAL program, for example). Lastly, build relationships, communicate your plan, and ask for help. Good L&D requires strong data analysis, marketing, product, and stakeholder management skills. This expertise may already exist within your company. 
+                    </li><br>
+                    <li>
+                    <strong>Execute and iterate.</strong>  With the voice of the customer and a clear strategy, now is time to execute. Send personalized messages to employees about the system, monitor KPIs, hold focus groups, and demonstrate to customers how you’re acting on their feedback. Maintain an LMS backlog of customer feedback and frquently schedule time to review it as a team. With consideration to value and technical feasibility, focus on the best features, deploy them, ask for feedback, and iterate. The key here is to consistently ship, to deliver functionalities, features or content which is anchored on customer feedback. Sustain this, year after year, and you will build an LMS people want to use.
+                    </li>
+                </ul>
+                <br>
+                <p> There may be budget considerations, issues around leadership, compliance concerns, and perhaps other barriers to LMS adoption, such as skills and capabilities. Perhaps there are too many variables, depending on the team(s) and their software delivery approach(es). However, in my experience, the customer rarely if ever sees these comlications and barriers to learning system adoption. What they see is the product itself, so let's make it count.  
+                </p> 
+            </div>
+            </div>
+
+            <div class="tab-pane" id="bootcamp">
+                <h2>What coding bootcamp taught me about learning </h2>
+                <div class="comment"><i class="lni lni-timer"></i> 4 minute read</div></i>
+
+                <!-- <img src="https://images.unsplash.com/photo-1507470855518-469f3b3dad25?ixlib=rb-1.2.1&auto=format&fit=crop&w=1980&q=80"> -->
+                <img src="https://images.unsplash.com/photo-1543147495-b6984a841135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1622&q=80">
+
+                <p> In the summer of 2019, I decided to enroll in a 6 month online coding bootcamp with Thinkful, a pioneer in remote-based educational programs. I put in ~20 hours a week, passed multiple technical assessments, and built some pretty cool websites. I learned how to think like a software engineer, and of course, I learned how to code. But I also learned a great deal about the <em>learning process</em>, and <em>how</em> to learn so much in such a short amount of time. My experience led me to believe that there are 3 must-have ingredients worth considering for effective learning: spaced repetition, commitment, and mentorship. In this article, I'll explain why each of these matter,  how I applied each, and potential implications for the future of learning. </p>
+                <br>
+                <blockquote>Effective learning = spaced repetition + commitment + mentorship</blockquote>
+
+                <ul class= "font-size">
+                <li>Spaced repetition: spaced repetition is an effective countermeasure to solve the Ebbinghaus forgetting curve problem (figure 1). In other words, it's easy for us to forget information we learned over time, and spaced repetition attempts to solve this problem by revisting information at spaced intervals. To practice spaced repetition, I started using Anki religiously. With Anki, I turned every note, every screenshot, every important line of code into a question on a digital flashcard that would be asked repeatedly, at varying time intervals, depending on my perceived confidence in my answer. Essentially, self quizzing. I created 292 cards and answered 1048 questions in total. Ultimately, I was picking up on concepts faster and implementing code sooner because I had the fundamentals down. I’d estimate that because of Anki, I saved ~2-3 hours per week, time that could have been lost Googling and shuffling through Stack Overflow.</li><br>
+                <div class="frame">
+                    <!-- <img src="https://sciencetltoolkit.files.wordpress.com/2019/02/ebbinghaus-diagram.png"> -->
+                    <img src="https://www.wolfson.cam.ac.uk/sites/default/files/2020-03/osmosisimage1.png">
+                    <div class="comment">Figure 1: Ebbinghaus forgetting curve</div>
+                </div>
+
+
+                
+                
+                <li>Commitment: commitment is perhaps the most important ingredient when it comes to learning, especially learning how to code. The Thinkful curriculum was designed such that in order to graduate, technical interviews and assignments must be passed, setting a high bar that requires dedication and time. Knowing this, I worked backwards, identifying leading and lagging indicators for success. My leading indicators: put in 20 hours per week, and commit to a daily 10:10 in Anki: add >10 cards/day, review all cards >10 min./day. My lagging indicator was simply the pass rate of technical interviews (imagine a seasoned developer watching you code!). I also kept a scorecard, tracking my hours with a Google sheet template (figure 2). Perhaps important to note that hours spent =! learning. When learning to code, it's common to spend hours on a trivial problem, one that that likely had a simple solution. In fact this is where many quit, making commitment that much more important. </li><br>
+                
+                <div class="frame">
+                    <!-- <img src="https://user-images.githubusercontent.com/51838382/85953620-96e97700-b926-11ea-9528-405801b1bb85.png"> -->
+                    <img src="https://user-images.githubusercontent.com/51838382/85962256-b7382680-b964-11ea-9fa1-3fd212c6d8fe.png">
+                    <div class="comment">Figure 2: hourly tracker, June-August 2019. Averaged ~2.9 hours/day = ~20 hours/week</div>      
+                </div>
+
+
+                
+                
+                <li>Mentorship: in 1984, educational theorist Benjamin Bloom published a research paper titled 2 Sigma which showed that students performed 98% (2 standard deviations, or 2 “sigma”) better vs. traditional classroom training when mastery based learning and 1:1 tutoring approaches were used (figure 3). Put simply: with the help of a mentor, students achieve mastery in sequence, moving from basic topics to advanced topics, irrespective of how long “mastery” takes. This is how the bootcamp was designed. We were expected to master the fundamentals at our pace, mainly through high quality text-based materials/exercises, and meet weekly with a mentor to guide us along. During our sessions we would review exercises and questions, which helped me solve problems faster and gain a material edge for technical interviews (we would practice these too). It was 2 Sigma at work: time to achieve competency was not fixed and there was a 1:1 teacher:student ratio. Compare that to a traditional classroom where time to acheive compentecy is fixed, with a ~1:30 teacher:student ratio. Likely no wonder, due to its resource intense nature, that it's often referred to as the 2 Sigma problem. Turns out sovling that problem is worth it.</li><br>
+                <div class="frame">
+
+                    <img src="https://miro.medium.com/max/3028/1*6FrrJH7tqP5CDvuH8kqMkQ.png">
+                    <div class="comment">Figure 3: Bloom's 2 Sigma. Findings suggest a combination of mastery based learning and 1:1 tutoring yield the highest levels of student achievement </div>
+                </div>
+            </ul>
+                
+                <p> Looking at the outcome data for coding bootcamps, it seems clear that this intensive way of learning, once thought as radical, could be the way most of us learn in the future. I could imagine a world where companies offer bootcamps with job garuntees (e.g. 'Become a QA test engineer at Amazon'), where students and even adults alike (perhaps those looking for new skills) globally can safely match with an affordable mentor online, where open source learning systems come embedded with tools like Anki for spaced repetition, training hour trackers, and better exercises to apply learning. Whatever the future may hold, as uncertain as it is, the ability to learn will be crucial, perhaps the most important skill of all. </p><br>
+                <!-- <img src="https://user-images.githubusercontent.com/51838382/85953921-aff32780-b928-11ea-86b0-ebf7cd804d1e.png">
+                <div class="comment">Figure 4: Thinkful outcomes report; 6 months after graduation, 80% of software engineering students employed in software engineering field </div> -->
+
+
+                
+                
+            </div>
+            <div class="tab-pane" id="ethereum">
+                    <h2>3 reasons why I’m excited about Ethereum</h2>
+                    <div class="comment"><i class="lni lni-timer"></i> 2 minute read</div>
+                    <!-- <img src="https://pbs.twimg.com/media/DRwZSBIUMAAkDA4.jpg"> -->
+                    <img src="https://images.unsplash.com/photo-1544509099-047faa4b96ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80">
+
+                    <p>I recently attended the ETH San Francisco Hackathon as a volunteer and was fairly blown away with the magnitude of BUIDL.
+                    I spoke with hackers, organizers, and other attendees — learning about their interests, their beliefs, and generally what draws people to ethereum. While there, one common question I heard was: what brings you here? This inspired me to briefly articulate what excites me most about ethereum, and highlight a few specific projects from ETH San Francisco that fuel this interest.
+                    Here’s 3 reasons why I’m excited:
+                    <ol class="font-size">
+                        <li> 💸Decentralized finance (DeFi): Ethereum is enabling enabling individuals, regardless of where they live, a chance to participate in a new financial system. At ETH San Francisco, we saw open finance projects like primotif, which uses decentralized financial primitives to give anyone the opportunity to invest in global markets. We saw gifty://, which allows anyone to text an NFT (imagine sports/esports fans texting digital collectables). We also saw Good Mines, Change Lives, allowing individuals to finance tuition for those who otherwise could not afford it. In the long run, open finance will be a net good for the world and, at the very least, change how we think about ownership and access to financial services.</li><br>
+                        <li>🔓Identity & data: As with open finance, user controlled identity is another powerful use case of ethereum. It’s becoming clear that a handful of tech titans capitalize on our digital data— our browsing data, our likes, our friends, our purchases. While these services are often convenient and free, so too are they invasive to the customer and net bad for innovation. Ethereum, and broadly web3, is rethinking this model, one where your digital data is instead owned by you. At ETH San Francisco, we saw several identity based projects. One was blockusign, which uses BloomID and IPFS to help with storage and ownership of documents. Another was CryptoSource, which attempts to both verify and protect the identity of whistleblowers. Also genomeCDP, which allows users to tokenize and potentially monetize their own DNA data. While identity is notoriously complex, ethereum based solutions are rapidly emerging.</li><br>
+                        <li>🚀Momentum: With growing community engagement, multiple parallel scalability efforts, and both new and established players getting on board: the sheer momentum of ethereum is mesmerizing. For example, roughly 1,000 hackers attended ETH San Francisco. There were 121 submissions, up from 65 submissions at ETH Berlin, and 34 submissions at ETH Buenos Aires. DevCon IV is near ~3,000 attendees, up from 2,000 at DevCon III, and 800 at Devcon II. Given the momentum, I expect ethereum to continuously surprise and bring new products that empower individuals, particularly around open finance and identity use cases.</li><br>
+                    </ol> 
+                    </p>
+                    <p>Huge shout out to the ETH San Francisco team. I encourage anyone interested to contact ETH Global and immerse yourself in what feels like a paradigm shift in tech, computing, and money.
+                    </p>
+            </div>
+            <div class="tab-pane " id="other-2">
+               <p>text goes here</p> 
+            </div>
+
+            <div class="tab-pane" id="about">
+                <p>Thanks for the site visit! I'm currently working at Bain & Co., 
+                where I serve as an internal product manager, deploying online learning platforms and tools. 
+                Hobbies include coding, running, and learning how to be a new dad. Lately, I've been interested in crypto and how it might just create a world where everyone, regardless of where they were born, has equal access to basic financial services. Reach out to me: jgrinnell0@gmail.com! 🙏
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+
+    <script type="text/javascript">//<![CDATA[
+    //]]></script>
+
+    <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+    height: document.body.getBoundingClientRect().height,
+    slug: "4uj6yxqb"
+    }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+    </script>
+    <script>
+    $(document).ready(() => {
+    let url = location.href.replace(/\/$/, "");
+    history.replaceState(null, null, url);
+
+
+    if (location.hash) {
+    const hash = url.split("#");
+    $('#myTab a[href="#'+hash[1]+'"]').tab("show");
+    url = location.href.replace(/\/#/, "#");
+    history.replaceState(null, null, url);
+    setTimeout(() => {
+    $(window).scrollTop(0);
+    }, 400);
+    } 
+
+    $('a[data-toggle="tab"]').on("click", function() {
+    let newUrl;
+    const hash = $(this).attr("href");
+    if(hash == "#home") {
+    newUrl = url.split("#")[0];
+    } else {
+    newUrl = url.split("#")[0] + hash;
+    }
+    // newUrl += "/";
+    history.replaceState(null, null, newUrl);
+    });
+    });
+    </script>
+</body>
+</html>
